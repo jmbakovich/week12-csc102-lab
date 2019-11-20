@@ -24,3 +24,13 @@ def FindWordCount(file,string):
         read = filename.read()
         count = read.count(string)
     PrintOutput(string)
+
+def ScoreFinder(plist,slist,name):
+    status = 0
+    for i in range(len(plist)):
+        if (plist[i].upper()) == (name.upper()):
+            PrintOutput(plist[i],'got a score of', slist[i]
+            status = 1
+     if status == 0:
+        PrintOutput('player not found')
+        
