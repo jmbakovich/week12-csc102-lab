@@ -10,3 +10,12 @@ def LoadFile(filename):
         reader = file.read()
         read_list = reader.split('\n')
     PrintOutput(read_list)
+
+def UpdateString(string, letter, num):
+    string = list(string)
+    string[num] = str(letter)
+    new_string = str()
+    for i in range(len(string)):
+        new_string += string[i]
+    PrintOutput(new_string)
+
