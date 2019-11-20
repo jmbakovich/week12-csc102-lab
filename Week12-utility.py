@@ -19,3 +19,8 @@ def UpdateString(string, letter, num):
         new_string += string[i]
     PrintOutput(new_string)
 
+def FindWordCount(file,string):
+    with open(file, 'r') as filename:
+        read = filename.read()
+        count = read.count(string)
+    PrintOutput(string)
