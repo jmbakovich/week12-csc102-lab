@@ -29,9 +29,9 @@ def ScoreFinder(plist,slist,name):
     status = 0
     for i in range(len(plist)):
         if (plist[i].upper()) == (name.upper()):
-            PrintOutput(plist[i],'got a score of', slist[i]
+            PrintOutput(plist[i],'got a score of', slist[i])
             status = 1
-     if status == 0:
+    if status == 0:
         PrintOutput('player not found')
 
 def Union(slist,plist):
@@ -45,3 +45,9 @@ def Intersection(lista,listb):
             if lista[i] == listb[j]:
                 listc.append(lista[i])
     PrintOutput(listc)
+
+def NotIn(lista,listb):
+    notlist = list(set(lista).difference(set(listb))) #https://stackoverflow.com/questions/51922547/python-contrast-2-lists
+
+    PrintOutput(notlist)
+ 
