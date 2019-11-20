@@ -37,3 +37,11 @@ def ScoreFinder(plist,slist,name):
 def Union(slist,plist):
     finallist = slist + plist
     PrintOutput(finallist)
+
+def Intersection(lista,listb):
+    listc = []
+    for i in range(len(lista)):
+        for j in range(len(listb)):
+            if lista[i] == listb[j]:
+                listc.append(lista[i])
+    PrintOutput(listc)
