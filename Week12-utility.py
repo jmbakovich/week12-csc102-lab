@@ -33,4 +33,7 @@ def ScoreFinder(plist,slist,name):
             status = 1
      if status == 0:
         PrintOutput('player not found')
-        
+
+def Union(slist,plist):
+    finallist = slist + plist
+    PrintOutput(finallist)
